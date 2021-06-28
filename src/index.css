@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+  margin:0;
+  padding:0;
+  background-color: gray;
+  font-family: 'Open Sans', sans-serif;
+  color : #B1AEAC;
+}
+
+
+.grid2
+{
+  margin : 0;
+  padding : 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  box-sizing: border-box;
+  grid-column-gap: 30px;
+  padding: 25px;
+  padding-top: 12px;
+  width: 100%;
+}
+
+.grid1
+{
+  margin : 0;
+  padding : 0;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(430px, 1fr));
+  box-sizing: border-box;
+  grid-column-gap: 30px;
+  padding: 25px;
+  padding-top: 12px;
+  width: 100%;
+}
+
+
+
+.login-container
+{
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.1);
+  background-color: white;
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  border-radius: 10px;
+  transform : translate(-50%,-50%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-logo
+{
+  width: 75px;;
+  margin-top: 40px;
+}
+
+.login-text
+{
+  font-size: 1.5em;
+  margin:0;
+  margin-top: 25px;
+}
+
+.form
+{
+  box-sizing: border-box;
+  width: 100%;
+
+  color : #B1AEAC;
+  background-color: #F1F1F0;
+  padding :10px;
+  border-radius: 5px;
+  position: relative;
+  height : 40px;
+  transition: 0.2s ease;
+}
+
+
+
+.form svg{
+  color: #D4D2CF;
+  position: absolute;
+  left : 15px;
+  top : 13px;
+  transition: 0.2s ease;
+}
+
+.form input
+{
+  box-sizing: border-box;
+  border : 0;
+  outline: none;
+  background-color: #F1F1F0;
+  margin-left: 5px;
+  width : 80%;
+  color : #D4D2CF;
+  font-weight: bold;
+  transform: translate(0,-2px);
+  position: absolute;
+  left : 35px;
+  top : 13px;
+  transition: 0.2s ease;
+}
+.Wrongconfirm
+{
+  color:#EC161E !important;
+}
+
+
+
+.form:hover > svg, .form:hover > ::placeholder,.form:hover > input, .form:focus-within > svg, .form:focus-within > ::placeholder, .form:focus-within > input
+{
+  color : #8A8988!important;
+}
+
+.button
+{
+  width: 100%;
+  min-width: 430px;
+  padding:10px;
+  border-radius: 5px;
+  background: #A1DE41;
+  border : 0;
+  outline: none;
+  font-size: 1.2em;
+  color : #DFF3BF;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button:hover{
+  background-color: #B7E56D;
+}
+
+.buttondisabled
+{
+  width: 100%;
+  min-width: 430px;
+  padding:10px;
+  border-radius: 5px;
+  background: #B1AEAC;
+  border : 0;
+  outline: none;
+  font-size: 1.2em;
+  color : #767472;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+.test
+{
+  margin: 10px 25px 10px 25px ;
+}
+
+::placeholder {
+  color: #D4D2CF;
+  transition: 0.2s ease;
+}
+
+
+.register-invite
+{
+  font-size: 0.8em;
+  margin-left: 25px;
+}
+
+.register-invite
+{
+  font-size: 0.8em;
+  margin-left: 25px;
+}
+
+.register-invite a
+{
+  color : #A1DD40;
+  text-decoration: none;
+}
+
+.register-invite a:hover
+{
+  color : #B7E56D;
+  text-decoration: none;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  left : 50%;
+  transform: translate(-50%,-10px);
+  font-size: 0.8em;
+  color: #757372;
+  z-index: -1;
+  width: 100%;
+}
+
+@media only screen and (max-width: 520px) {
+  .login-container
+  {
+    width: 100%;
+    height : 100vh;
+    padding-top: 30px;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    box-sizing: border-box;
+  }
+  footer{
+    display: none;
+  }
+
+}
+.headerContainer
+{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
+  background-color: white;
+  margin :0;
+  padding:0;
+  position : absolute;
+  left: 0;
+  top: 0;
+  width : 100%;
+  height : 55px;
+}
+
+.disconnect
+{
+  position: absolute;
+  top : 10px;
+  right : 10px;
+  padding : 8px;
+  width: 35px;
+  height: 35px;
+  background-color: #EC161E;
+  color : #AE0001;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 0.7em;
+}
+
+.disconnect svg{
+  font-size: 0.9em;
+}
+
+#Email  /* #first-name , #last-name */
+{
+  color : #A1DE41;
+}
+
+.welcome-message
+{
+  font-size: 0.9em;
+  position: absolute;
+  top : 4px;
+  left : 30px;
+}
+
+.mainPage{
+  margin: 0;
+  padding:0;
+}
+
+.calendarContainer
+{
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: auto 400px;
+}
+
+.choice
+{
+  background-color: #F8F8F8;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
+  height : 100vh;
+  position: relative;
+}
+
+.choice-wrapper
+{
+  width: 100%;
+  font-size: 1.1em;
+  color : #7E7C7A;
+  position: absolute;
+  top: 50%;
+  left :50%;
+  transform: translate(-50%,-70%);
+}
+
+.choice-wrapper button{
+  padding : 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #A1DD40;
+  color : #E7F6CF;
+  font-weight: bold;;
+}
+
+#available , #selected-date
+{
+  color : #A1DD40;
+}
+
+#not-available
+{
+  color : #EC161E;
+}
+
+.calendar-relative
+{
+  position: relative;
+  width : 100%;
+}

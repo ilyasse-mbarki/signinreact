@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.currentMonth
+{
+  text-align: center;
+  margin : 0;
+  padding : 0;
+  transform: translate(-20px,0);
+  font-weight: bolder;
+  color : #8D8D8D;
+  font-size: 1.25em;
+}
+
+.unavailable-month{
+  background-color: #de4141;
+}
+
+#transparency
+{
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  background-color: white;
+  grid-gap:15px;
+  width : auto;
+  padding : 15px;
+  border-top: 1px solid #242222;
+
+}
+
+.LastDay button, .DayCalendar button
+{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+  width: 70px;
+  height : 70px;
+  margin : 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.25em;
+  color : #C1CAC1;
+  transition: 0.2s ease;
+
+}
+
+.DayCalendar button:hover
+{
+  background-color: #A1DE41;
+  color : rgb(22, 18, 18);
+  cursor: pointer;
+}
+
+.LastDay button
+{
+
+  background-color: #d4d4d4;
+  color : #e48f8f;
+
+}
+
+
+
+.containerDiv{
+  background-color: rgb(75, 38, 38);
+  width : 600px;
+  border : 1px solid #EEEEEE;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(102, 33, 33, 0.05);
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%,-50%);
+}
